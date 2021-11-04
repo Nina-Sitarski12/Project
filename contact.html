@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact.html</title>
+    <style type="text/css">
+     body{
+         background-color: black;
+         color: white;
+         text-align: center;
+     }
+     #Taskbar ul
+{
+margin: 0;
+padding: 0;
+display: block;
+
+}
+
+
+#Taskbar li
+{
+list-style-type: none;
+float: left;
+display: block;
+width: 150px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkgray;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: green;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+      </style>
+    </head>
+    <body>
+        <div id= "Taskbar">
+
+       
+        </div>
+        <div id="links">
+        <ul>
+        <li><a href = "index.html">Home</a></li>
+        <li><a href = "about.html">About</a></li>
+        <li><a href = "past.html">Past Initiatives</a></li>
+        <li><a href = "meet.html">Meet the Committee</a></li>
+        <li><a href = "photos.html">Photos</a></li>
+        <li><a href = "contact.html">Contact</a></li>
+        <li><a href = "sitemap.html">Sitemap</a></li>
+        
+        </ul>
+        </div>
+        </div>
+        
+        <img src="images/babson.jpg" alt="beaver"
+        height="100">
+    
+        <p>
+            *If you wish to remain anonymous, leave name and email field blank
+        </p>
+    <label for="Lastname"> Last Name:</label>
+    <input
+        type="text"
+        id="lastname"
+        name="lastname"
+        maxlength="100"
+        placeholder="Last Name"
+    />
+    <label for="Firstname"> First Name:</label>
+    <input
+        type="text"
+        id="firstname"
+        name="firstname"
+        maxlength="100"
+        placeholder="First Name"
+    />
+    <label for="email"> Email:</label>
+    <input
+        type="text"
+        id="email"
+        name="email"
+        maxlength="100"
+        placeholder="Email"
+    />
+    <form>
+        <div>
+            Affiliation:
+            <label>Student 
+                <input type="radio" name="affiliation" value="student" />
+            </label>
+            <label>Coach 
+                <input type="radio" name="affiliation" value="coach" />
+            </label>
+            <label>Parent 
+                <input type="radio" name="affiliation" value="parent" />
+            </label>
+            <label>Faculty 
+                <input type="radio" name="affiliation" value="faculty" />
+            </label>
+            <label>Other 
+                <input type="radio" name="affiliation" value="other" />
+            </label>
+        </div>
+    </form>
+    <div> Reason for Inquiry: </div>
+    <div>
+        <input type="checkbox" id="Question" name="inquiry" value="Question" />
+        <label for="Question">Question</label>
+    </div>
+    <div>
+        <input type="checkbox" id="Suggestion" name="inquiry" value="Suggestion" />
+        <label for="Suggestion">Suggestion</label>
+    </div>
+    <div>
+        <input type="checkbox" id="Comment" name="inquiry" value="Comment" />
+        <label for="Comment">Comment</label>
+    </div>
+    <div>
+        <input type="checkbox" id="Complaint" name="inquiry" value="Complaint" />
+        <label for="Complaint">Complaint</label>
+    </div>
+    <div>
+        <input type="checkbox" id="Other" name="inquiry" value="Other" />
+        <label for="Other">Other</label>
+    </div>
+    <div>
+        <label for="grade-select"> What Sports Team are you Affiliated With?</label>
+    </div>
+    <div>
+        <select name="team" id="team-select">
+            <option value=" ">-- Please select your team --</option>
+            <option value="MSki">Men's Alpine Skiing</option>
+            <option value="Baseball">Baseball</option>
+            <option value="Mbball">Men's Basketball</option>
+            <option value="Mxct">Men's Cross Country/Track</option>
+            <option value="Golf">Golf</option>
+            <option value="IceHockey">Ice Hockey</option>
+            <option value="Mlax">Men's Lacrosse</option>
+            <option value="MSocc">Men's Soccer</option>
+            <option value="Msd">Men's Swim & Dive</option>
+            <option value="Mtennis">Men's Tennis</option>
+            <option value="Wski">Women's Alpine Skiing</option>
+            <option value="Wbball">Women's Basketball</option>
+            <option value="Wxct">Women's Cross Country/Track</option>
+            <option value="FH">Field Hockey</option>
+            <option value="Wlax">Women's Lacrosse</option>
+            <option value="Wsocc">Women's Soccer</option>
+            <option value="Softball">Softball</option>
+            <option value="Wsd">Women's Swim & Dive</option>
+            <option value="Wtennis">Women's Tennis</option>
+            <option value="Volleyball">Volleyball</option>
+            <option value="Other">Other</option>
+            <option value="NA">Not Applicable</option>
+        </select>
+    </div>
+    <div>
+        <div>
+            <label for="comments">Leave a Reply:</label>
+        </div>
+        <div>
+            <textarea
+                id="comments"
+                name="comments"
+                rows="5"
+                cols="25"
+                placeholder="Enter your comment here..."
+            ></textarea>
+        </div>
+    </div>
+    <button type="submit">
+        SUBMIT <img src="images/mailbox.png"
+                    height="30"
+                    alt="submit button"/>
+    </button>
+    <button type="submit">
+        RESET <img src="images/reset.png"
+                    height="30"
+                    alt="reset button"/>
+    </button>
+        
+    </form>
+    <a href="index.html">
+        <img src="images/home.jpg" alt="Back to index.html"
+        width="30" height="30">
+        </a> 
+        <ul><a href="sitemap.html"> Go to Sitemap</a></ul> 
+      </body>
+    </html>  
