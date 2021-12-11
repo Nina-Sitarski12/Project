@@ -32,7 +32,7 @@
             text-align: center;
         }
         p {
-            text-indent: 30px;
+            text-align: center;
             color: white;
         }
         img {float: center; margin-left: 500px; margin-right: 5000px;
@@ -154,8 +154,10 @@ li.dropdown {
         </ul>
         </div>
         </div>
-
-
+<p> Trivia Question of the Day: How many National Championship Titles do the Babson Beavers Have?</p>
+        <p>
+          <button>Click here for the answer</button>
+        </p> 
     <h2>SAAC-lete of the Week!</h2>
     <a id="SAAC-lete"></a>
     
@@ -202,8 +204,19 @@ li.dropdown {
  
  <hr>
 
+<script>
+  
 
+  function c() {
+        alert("5 National Championships! Men's Soccer '75, '79, '80, Men's Hockey '84, Men's Basketball '17!");
+      }
+
+      //   document.querySelector("button").onclick = c;
+      document.querySelector("button").onclick = function () {
+        c();
+      };
+</script>
+</body>
 </html>
  
-        
-    </body>
+
