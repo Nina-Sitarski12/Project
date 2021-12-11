@@ -71,6 +71,9 @@ li.dropdown {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
+hr {
+    height: 60px;
+}
 
       </style>
     </head>
@@ -146,6 +149,7 @@ li.dropdown {
             </label>
         </div>
     </form>
+    
     <div> Reason for Inquiry: </div>
     <div>
         <input type="checkbox" id="Question" name="inquiry" value="Question" />
@@ -227,6 +231,46 @@ li.dropdown {
         <img src="images/home.jpg" alt="Back to index.html"
         width="30" height="30">
         </a> 
+
+
+<hr>
+
+
+
+
+
+        <form action="" id="form-feedback" method="post">
+            <div>
+              <label>
+                Enter Name:
+                <input maxlength="30" name="userName" type="text" id="input-username"
+              /></label>
+            </div>
+            <div>
+              <textarea cols="30" id="ta-comments" name="comments" rows="3"></textarea>
+            </div>
+            <div>
+              <button id="btn-click">For fun, enter name and click here!</button>
+            </div>
+          </form>
         <ul><a href="sitemap.html"> Go to Sitemap</a></ul> 
+        
       </body>
+      <script>
+        function f() {
+          console.log("starting...");
+          const myForm = document.getElementById("form-feedback");
+          // const x = myForm.userName.value;
+          // const x = myForm["userName"].value;
+          const x = document.getElementById("input-username").value;
+          const commentsArea = document.getElementById("ta-comments");
+          commentsArea.value = x + ", is The Babson Beavers biggest Fan! Thank you for your support!"
+          console.log(x);
+        }
+  
+        document.getElementById("btn-click").onclick = function (event) {
+          event.preventDefault();
+          f();
+        };
+      </script>
     </html>  
